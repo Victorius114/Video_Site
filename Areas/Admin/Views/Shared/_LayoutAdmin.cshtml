@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>@ViewData["Title"] - Admin</title>
+    <link rel="stylesheet" href="~/admin-assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/admin-assets/css/atlantis.css" />
+    <link href="~/admin-assets/css/demo.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        @Html.Partial("_Sidebar")
+
+        <div class="main-panel">
+            <!-- Header -->
+            @Html.Partial("_Header")
+
+            <div class="content">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </div>
+
+            <!-- Footer -->
+            @Html.Partial("_Footer")
+        </div>
+    </div>
+
+    <script src="~/admin-assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="~/admin-assets/js/core/bootstrap.min.js"></script>
+    <script src="~/admin-assets/js/atlantis.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

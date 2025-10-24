@@ -1,0 +1,18 @@
+﻿body {
+    display: flex;
+}
+
+img{
+    width: 320px;
+    height: 180px;
+    border: 2px solid black;
+}
+
+section div{
+    margin: 20px 20px 20px 20px;
+    display: flex;
+}
+
+.in4Khoa{
+    flex-direction: column;
+}
